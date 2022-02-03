@@ -15,6 +15,7 @@
     font-size: 70px;
 }
 
+
 .header1 span {
     color : goldenrod
 }
@@ -41,4 +42,16 @@
     background-color: goldenrod;
     color: black;
     border-radius: 0 20px 0 20px;
+}
+
+@media screen and (max-width:480px) {
+    .header1{
+        font-size: 40px;
+    }
+    .header2{
+        font-size: 30px;
+    }
+    .header-btn{
+        font-size: 20px;
+    }    
 }

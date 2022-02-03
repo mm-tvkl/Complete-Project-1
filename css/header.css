@@ -1,0 +1,44 @@
+.header{
+    background-image: linear-gradient(to bottom , #3030309e , #000 ) , url("../img/bg1.jpg");
+    grid-column: 1 / -1;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3 , min-content);
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.header1{
+    color: white;
+    font-size: 70px;
+}
+
+.header1 span {
+    color : goldenrod
+}
+
+.header2{
+    color: white;
+    font-size: 40px;
+}
+
+.header-btn{
+    background-color: transparent;
+    border: 3px solid goldenrod;
+    color: goldenrod;
+    padding: 10px 30px;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    transition: all 200ms;
+    justify-self: center;
+}
+
+.header-btn:hover{
+    background-color: goldenrod;
+    color: black;
+    border-radius: 0 20px 0 20px;
+}

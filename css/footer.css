@@ -1,4 +1,50 @@
 .footer{
-    background-color: red;
     grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    background-color: #e9e9e9;
+    border-top: 2px solid gray;
+}
+
+.footer ul{
+    list-style-type: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-item{
+    font-size: 30px;
+    color: goldenrod;
+    padding-bottom: 10px;
+}
+
+.footer ul li{
+    margin: 10px 0;
+}
+
+.footer ul li i{
+    margin: 0 5px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    transition: margin-right 200ms;
+}
+
+li a:hover{
+    color: goldenrod;
+    margin-right: 20px;
+}
+
+.telegram-link:hover{
+    color: #00bfff;
+}
+
+.whatsapp-link:hover{
+    color: #61c200;
+}
+
+.youtube-link:hover{
+    color: crimson;
 }

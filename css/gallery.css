@@ -1,4 +1,80 @@
 .gallery{
-    background-color: indigo;
     grid-column: 1 / -1;
+}
+
+.gallery-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3 , 250px);
+    grid-template-areas: "gallery_1 gallery_1 gallery_2"
+                         "gallery_4 gallery_3 gallery_2"
+                         "gallery_4 gallery_5 gallery_5";
+    padding: 20px 70px;
+    grid-gap: 20px;
+}
+.image-gallery{
+    border-radius: 20px;
+    box-shadow: 0 10px 10px #d5d5d5;
+}
+.gallery1{
+    background-image: url("../img/gallery1.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-area: gallery_1;
+}
+.gallery2{
+    background-image: url("../img/gallery2.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-area: gallery_2;
+}
+.gallery3{
+    background-image: url("../img/gallery3.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-area: gallery_3;
+}
+.gallery4{
+    background-image: url("../img/gallery4.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-area: gallery_4;
+}
+.gallery5{
+    background-image: url("../img/gallery6.jpg");
+    background-position: center;
+    background-size: cover;
+    grid-area: gallery_5;
+}
+
+@media screen and (max-width:930px) {
+    .gallery-section{
+        grid-template-areas: "gallery_1 gallery_1 gallery_2"
+                             "gallery_4 gallery_3 gallery_3"
+                             "gallery_5 gallery_5 gallery_5";
+    }   
+}
+
+@media screen and (max-width:650px) {
+    .gallery-section{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4 , 250px);
+        grid-template-areas: "gallery_1 gallery_1"
+                             "gallery_4 gallery_3"
+                             "gallery_2 gallery_2"
+                             "gallery_5 gallery_5";
+    }   
+}
+
+@media screen and (max-width:480px) {
+    .gallery-section{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5 , 250px);
+        grid-template-areas: "gallery_1"
+                             "gallery_2"
+                             "gallery_3"
+                             "gallery_4"
+                             "gallery_5";
+        padding: 20px 20px;
+    }   
 }

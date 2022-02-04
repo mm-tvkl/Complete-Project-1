@@ -20,7 +20,7 @@
     padding: 10px;
     border-radius: 0 35px 0 35px;
     transition: transform 300ms , box-shadow 200ms;
-    transform: scale(.9) rotate(10deg);
+    transform: scale(.9) rotate(4deg);
     box-shadow: 0 0 0 transparent;
 }
 

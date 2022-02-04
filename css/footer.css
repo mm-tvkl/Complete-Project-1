@@ -1,9 +1,10 @@
 .footer{
     grid-column: 1 / -1;
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(auto-fit , minmax(200px , 1fr));
     background-color: #e9e9e9;
     border-top: 2px solid gray;
+    grid-gap: 20px;
 }
 
 .footer ul{
@@ -20,6 +21,7 @@
 
 .footer ul li{
     margin: 10px 0;
+    font-size: 20px;
 }
 
 .footer ul li i{
@@ -47,4 +49,11 @@ li a:hover{
 
 .youtube-link:hover{
     color: crimson;
+}
+
+@media screen and (max-width:400px) {
+    .footer ul{
+        text-align: start;
+        margin: 0 20px;
+    }
 }

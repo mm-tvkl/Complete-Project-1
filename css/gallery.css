@@ -15,7 +15,14 @@
 .image-gallery{
     border-radius: 20px;
     box-shadow: 0 10px 10px #d5d5d5;
+    filter: blur(5px) grayscale(1);
+    transition: filter 200ms;
 }
+
+.image-gallery:hover{
+    filter: blur(0px) grayscale(0);
+}
+
 .gallery1{
     background-image: url("../img/gallery1.jpg");
     background-position: center;
@@ -52,7 +59,7 @@
         grid-template-areas: "gallery_1 gallery_1 gallery_2"
                              "gallery_4 gallery_3 gallery_3"
                              "gallery_5 gallery_5 gallery_5";
-    }   
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -63,7 +70,10 @@
                              "gallery_4 gallery_3"
                              "gallery_2 gallery_2"
                              "gallery_5 gallery_5";
-    }   
+    }
+    .image-gallery{
+        filter: blur(0) grayscale(0);
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -76,5 +86,8 @@
                              "gallery_4"
                              "gallery_5";
         padding: 20px 20px;
+    }
+    .image-gallery{
+        filter: blur(0) grayscale(0);
     }   
 }

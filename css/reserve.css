@@ -1,79 +1,72 @@
-.reserve{
+.reserve {
     grid-column: 1 / -1;
 }
 
-.reserve-section{
-    background-image: linear-gradient(to bottom , #38383854 , #000000d2), url("../img/bg2.jpg");
-    background-size: cover;
-    background-position-y: 80%;
+.reserve-section {
     display: grid;
-    grid-template-columns: 20px repeat(4 , 1fr) 20px;
+    grid-template-columns: 50px repeat(4, 1fr) 50px;
     grid-template-rows: 1fr;
     padding: 55px;
     text-align: center;
+    background-image: linear-gradient(to bottom, #4d4c4c4f, #000000), url("../img/bg2.jpg");
+    background-position: center;
 }
 
-.right{
-    background-color: #000000ce;
+.right {
+    background-color: rgba(0, 0, 0, 0.836);
     color: white;
-    grid-column: 2 /3;
+    grid-column: 2 / 3;
     display: grid;
-    grid-template-rows: 2fr 1fr repeat(3 ,.5fr) 1fr;
-    justify-items: center;
-    align-items: center;
-    border-radius: 0 30px 0 0;
+    grid-template-rows: 2fr 1fr repeat(3, 0.5fr) 2fr;
+    padding-top: 15px;
 }
 
-.left{
-    background-color: #ffffffd4;
-    color: black;
-    grid-column: 3/ 6;
+.left {
+    background-color: rgba(255, 255, 255, 0.74);
+    grid-column: 3 / 6;
     display: grid;
-    grid-template-columns: repeat(2 , 1fr);
-    grid-template-rows: repeat(2 , 1fr);
-    align-items: center;
-    border-radius: 0 0 0 30px;
+    padding: 10px;
+    grid-template-rows: 0.5fr 1fr 0.5fr 1fr 2fr;
 }
 
-.left .title2{
-    grid-column: 2/3;
-    grid-row: 1/2;
+.left-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.parantese{
-    color: gold;
+.leftbox-img {
+    width: 100%;
+    height: 120px;
+    clip-path: circle(25% at 50% 50%);
 }
 
-.reserve-branch{
-    color: gold;
+.left-title,
+.reserve-branch {
+    color: goldenrod;
 }
 
-.branches{
-    margin-bottom: 10px;
+.parantes {
+    color: goldenrod;
 }
 
-.reserve-title{
-    margin-top: 10px;
-    font-size: 20px;
+.order-text {
+    align-self: center;
 }
 
-.poem{
-    color: gold;
-    margin: 5px 0;
-    padding-bottom: 10px;
+@media screen and (max-width: 675px) {
+    .left {
+        font-size: 12px;
+    }
+    .right {
+        font-size: 13px;
+    }
+    .reserve-section {
+        padding: 10px 0px;
+    }
 }
 
-.item1{
-    color: black;
-    font-size: 20px;
-}
-
-.left-title i{
-    font-size: 30px;
-    text-align: right;
-}
-
-.item2{
-    color: black;
-    font-size: 20px;
+@media screen and (max-width: 400px) {
+    .reserve-section {
+        grid-template-columns: 15px repeat(4, 1fr) 15px;
+    }
 }

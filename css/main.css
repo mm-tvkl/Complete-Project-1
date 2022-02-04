@@ -22,3 +22,29 @@ main{
     grid-template-rows: 80vh repeat(5 , max-content);
     grid-template-columns: repeat(6 , 1fr);
 }
+
+.section-title{
+    text-align: center;
+    padding: 25px;
+    font-size: 30px;
+}
+
+.section-title::after,.section-title::before{
+    background-color: goldenrod;
+    content: "";
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+    border-radius: 4px;
+}
+
+.section-title::before{
+    left: 10px;
+    margin-right: -50%;
+}
+.section-title::after{
+    right: 10px;
+    margin-left: -50%;
+}
